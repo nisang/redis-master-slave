@@ -1,0 +1,16 @@
+# redis-master-slave
+Redis Sentinel Docker集群方案
+
+1.build
+build master镜像
+  docker build -t redis:master .
+build slave镜像
+  docker build -t redis:slave .
+2.run
+  $:master:docker run -d --name masterredis -p 6379:6379  redis:master /run.sh
+  
+  $:slave:docker run -d --name redisslave1 --link masterredis:masterredis redis:slave /run.sh
+3.连接：
+ $:redis-cli -h ${masterip} -p 6379
+ $:auth dandan
+ $:info Replication
