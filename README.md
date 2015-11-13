@@ -11,13 +11,13 @@ Redis Sentinel Docker集群方案
 	  
 2.run<br/>
 	
-	$:master:docker run -d --name masterredis -p 6379:6379  redis:master /run.sh <br/><br/><br/><br/>
+	$:master:docker run -d --name masterredis -p 6379:6379  redis:master /run.sh 
 	  
-	$:slave:docker run -d --name redisslave1 --link masterredis:masterredis redis:slave /run.sh <br/>
+	$:slave:docker run -d --name redisslave1 --link masterredis:masterredis redis:slave /run.sh
 
 	  
 3.连接：<br/>
 
-	 $:redis-cli -h ${masterip} -p 6379<br/>
-	 $:auth dandan<br/>
-	 $:info Replication<br/>
+	 $:redis-cli -h ${masterip} -p 6379
+	 $:auth dandan
+	 $:info Replication
