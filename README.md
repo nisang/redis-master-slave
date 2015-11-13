@@ -1,4 +1,4 @@
-# redis-master-slave
+# redis-sentinel
 
 Redis Sentinel Docker集群方案
 
