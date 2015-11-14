@@ -13,7 +13,7 @@
 	
 	$:master:docker run -d --name masterredis -p 6379:6379  redis:master /run.sh 
 	  
-	$:slave:docker run -d --name redisslave1 -p 6379:6379 --link masterredis:masterredis redis:slave /run.sh
+	$:slave:docker run -d --name redisslave1 -p 6479:6379 --link masterredis:masterredis redis:slave /run.sh
 
 	  
 #### 3.连接：
