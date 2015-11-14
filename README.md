@@ -1,6 +1,6 @@
-# redis-sentinel
+# Redis Sentinel Docker集群方案
 
-### Redis Sentinel Docker集群方案
+
 
 
 #### 1.build:
