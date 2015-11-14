@@ -21,6 +21,11 @@
 	 $:redis-cli -h ${masterip} -p 6379
 	 $:auth dandan
 	 $:info Replication
+#### 4.镜像
+	master镜像：daocloud.io/onatkh/redis-master
+		拉取镜像：docker pull daocloud.io/onatkh/redis-master:master-init
+	slave镜像：daocloud.io/onatkh/redis-slave
+		拉取镜像：docker pull daocloud.io/onatkh/redis-slave:master-init
 #### 方案来自：
 	http://luyx30.blog.51cto.com/1029851/1349027
 #### 效果展示
